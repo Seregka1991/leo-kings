@@ -2,10 +2,6 @@
     const swiper = new Swiper(".swiper-wrapper-gallery", {
       direction: 'horizontal',
       loop: true,
-      slidesPerView: 3,
-      сenteredSlides: false,
-      loopAdditionalSlides: 1,
-      loopFillGroupWithBlank: true,
       spaceBetween: 20,
       autoplay: true,
       navigation: {
@@ -20,19 +16,20 @@
           },
         },
         breakpoints: {
-          1330: {
-              slidesPerView: 3,
-              
-          },
-          1024: {
-              slidesPerView: 2,
-              
-          },
-          480: {
-              slidesPerView: 1,
-              
-          },
-       }, 
+            480: {
+                slidesPerView: 1,
+                
+            },
+            576: {
+                slidesPerView: 2,
+                
+            },
+            1330: {
+                slidesPerView: 3,
+                
+            },
+         },
+ 
     });
     
 
@@ -58,3 +55,22 @@
     });
 
 }); */
+
+
+
+jQuery( document ).ready(function($) {
+
+    $('.btn1').click(function(){
+        $('html,body').animate({scrollTop:$('.section-two').offset().top}, 800);
+    });
+    $('.btn2').click(function(){
+        $('html,body').animate({scrollTop:$('.section-three').offset().top}, 800);
+    });
+     $('.btn3').click(function(){
+        $('html,body').animate({scrollTop:$('.section-four').offset().top}, 800);
+    }); 
+    $('.btn4').click(function(){
+        $('html,body').animate({scrollTop:$('.section-five').offset().top}, 800);
+    });
+});
+    
