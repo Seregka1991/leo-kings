@@ -33,28 +33,75 @@
     });
     
 
-/*     jQuery(document).ready(function($){
+     jQuery(document).ready(function($){
         $(window).on("load", function () {
             $(".scrolls-main").mCustomScrollbar();
+            return false;
         });
     });
 
- 
 
 
     jQuery(document).ready(function($){
 
     $(".scrolls-main").mCustomScrollbar({
         axis: "y",              // вертикальный скролл
-        theme: "rounded-dark",  // тема
-        scrollInertia: "330",   // продолжительность прокрутки, значение в миллисекундах
-        setHeight: "100%",      // высота блока (переписывает CSS)
+        theme: "light-thick",  // тема
+        scrollInertia: "430",   // продолжительность прокрутки, значение в миллисекундах
         mouseWheel: {
-            deltaFactor: 300    // кол-во пикселей на одну прокрутку колёсика мыши
+            deltaFactor: 400    // кол-во пикселей на одну прокрутку колёсика мыши
         }
+       
     });
 
-}); */
+
+    jQuery(document).ready(function($){
+        $(window).on("load", function () {
+            $(".scrolls-main2").mCustomScrollbar();
+            return false;
+        });
+       
+    });
+
+
+
+    jQuery(document).ready(function($){
+
+    $(".scrolls-main2").mCustomScrollbar({
+        axis: "y",              // вертикальный скролл
+        theme: "light-thick",  // тема
+        scrollInertia: "430",   // продолжительность прокрутки, значение в миллисекундах
+
+        mouseWheel: {
+            deltaFactor: 400    // кол-во пикселей на одну прокрутку колёсика мыши
+        }
+        });
+    });
+
+    jQuery(document).ready(function($){
+        $(window).on("load", function () {
+            $(".scrolls-main3").mCustomScrollbar();
+            return false;
+        });
+    });
+
+
+
+    jQuery(document).ready(function($){
+
+    $(".scrolls-main3").mCustomScrollbar({
+        axis: "y",              // вертикальный скролл
+        theme: "light-thick",  // тема
+        scrollInertia: "430",   // продолжительность прокрутки, значение в миллисекундах
+
+        mouseWheel: {
+            deltaFactor: 400    // кол-во пикселей на одну прокрутку колёсика мыши
+        }
+        });
+    });
+
+    
+}); 
 
 
 
@@ -72,5 +119,7 @@ jQuery( document ).ready(function($) {
     $('.btn4').click(function(){
         $('html,body').animate({scrollTop:$('.section-five').offset().top}, 800);
     });
+    $('.scroll-down').click(function(){
+        $('html,body').animate({scrollTop:$('.section-two').offset().top}, 800);
+    });
 });
-    
