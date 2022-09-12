@@ -123,7 +123,7 @@ jQuery( document ).ready(function($) {
         $('html,body').animate({scrollTop:$('.section-two').offset().top}, 800);
     });
 });
-
+jQuery( document ).ready(function($) {
 
 // Проверяем, можно ли использовать Webp формат
 function canUseWebp() {
@@ -139,7 +139,7 @@ function canUseWebp() {
 }
 
 
-window.onload = function () {
+
     // Получаем все элементы с дата-атрибутом data-bg
     let images = document.querySelectorAll('[data-bg]');
     // Проходимся по каждому
@@ -163,4 +163,4 @@ window.onload = function () {
             imagesWebp[i].style.backgroundImage = 'url(' + imageWebp + ')';
         }
     }
-};
+});
